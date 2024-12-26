@@ -1,6 +1,6 @@
 package com.msrishan.thinkup.programserviceapi.controller;
 
-import com.msrishan.thinkup.programserviceapi.dto.RequestProgramDto;
+import com.msrishan.thinkup.programserviceapi.dto.request.RequestProgramDto;
 import com.msrishan.thinkup.programserviceapi.service.ProgramService;
 import com.msrishan.thinkup.programserviceapi.util.StandardResponse;
 import lombok.RequiredArgsConstructor;

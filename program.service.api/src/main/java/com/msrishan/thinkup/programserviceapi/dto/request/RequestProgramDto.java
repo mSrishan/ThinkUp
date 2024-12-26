@@ -1,4 +1,4 @@
-package com.msrishan.thinkup.programserviceapi.dto;
+package com.msrishan.thinkup.programserviceapi.dto.request;
 
 import com.msrishan.thinkup.programserviceapi.entity.Subject;
 import lombok.AllArgsConstructor;

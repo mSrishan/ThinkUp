@@ -8,10 +8,9 @@ import com.mSrishan.ThinkUp.subject.service.api.util.StandardResponse;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
+
+import java.util.List;
 
 @RestController
 @RequestMapping("/api/v1/subjects")
@@ -32,6 +31,14 @@ public class SubjectController {
                     requestSubjectDto.getName())    ,
                 HttpStatus.CREATED
         );
+    }
+
+    @GetMapping("/{id}")
+    @ResponseStatus(HttpStatus.OK)
+    private boolean isListAvailable(
+            @PathVariable List<Long> id
+    ){
+        return subjectService.isListAvailable(id);
     }
 
 }
